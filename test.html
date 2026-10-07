@@ -4,65 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <header>
-        <img src="pp.png" width="150" height="150">
-        <h1>Akhdan Ibrahim</h1>
-        <p>Mahasiswa Teknik Informatika | WebDev & GameDev</p>
-        <p>Email: akhdanibrahim19@gmail.com | Telepon: +62 851-6169-2912 | Domisili: Bandung, Jawa Barat</p>
-        <p>
-            <a href="https://id.linkedin.com/in/akhdanibrahim" target="_blank">LinkedIn</a> | 
-            <a href="https://github.com/akhdnm" target="_blank">GitHub</a> | 
-            <a href="anjay" target="_blank">Portofolio</a>
-        </p>
+        <div class="profile-container">
+            <img src="pp.png" width="150" height="150" alt="Foto Profil">
+            <div class="profile-text">
+                <h1>Akhdan Ibrahim</h1>
+                <p><strong>Mahasiswa Teknik Informatika | WebDev & GameDev</strong></p>
+                <p>Email: akhdanibrahim19@gmail.com | Telepon: +62 851-6169-2912 | Domisili: Bandung, Jawa Barat</p>
+                <p class="social-links">
+                    <a href="https://id.linkedin.com/in/akhdanibrahim" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a> | 
+                    <a href="https://github.com/akhdnm" target="_blank">
+                    <i class="fa-brands fa-github"></i> GitHub
+                    </a> | 
+                    <a href="#" target="_blank">
+                    <i class="fa-solid fa-globe"></i> Portofolio
+                    </a>
+                </p>
+            </div>
+        </div>
     </header>
 
-    <hr>
 
     <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid placeat tempora aperiam mollitia nisi laboriosam ipsum incidunt consequatur odio! At atque magnam ducimus, iste porro natus. Neque, inventore voluptas?</p>
-        </section>
+        <!-- Wadah Grid untuk 4 kotak atas -->
+        <div class="grid-layout">
+            <!-- Box 1 -->
+            <section class="box-section">
+                <h2>About Me</h2>
+                <p>"Halo! Saya seorang mahasiswa yang sedang mengeksplorasi dunia web development dan game development Membangun aplikasi web yang fungsional sekaligus merancang sistem interaktif dan logika pemrograman yang kreatif. Selalu antusias untuk memecahkan tantangan teknis dan mengubah ide menjadi pengalaman digital yang menarik".</p>
+            </section>
 
-        <section>
-            <h2>Riwayat Pendidikan</h2>
-            <article>
-                <h3>Institut Teknologi Nasional Bandung</h3>
-                <p><strong>Program Studi:</strong> S1 Teknik Informatika</p>
-                <p><strong>Status:</strong> Sedang Menempuh Pendidikan (Semester Aktif)</p>
+            <!-- Box 2 -->
+            <section class="box-section">
+                <h2>Riwayat Pendidikan</h2>
+                <article>
+                    <h3>Institut Teknologi Nasional Bandung</h3>
+                    <p><strong>Program Studi:</strong> S1 Teknik Informatika</p>
+                    <p><strong>Status:</strong> Sedang Menempuh Pendidikan (Semester Aktif)</p>
+                </article>
+            </section>
+
+            <!-- Box 3 -->
+            <section class="box-section">
+                <h2>Keahlian</h2>
+                <ul>
+                    <li><strong>Hard Skills:</strong> JavaScript, Python, HTML/CSS</li>
+                    <li><strong>Soft Skills:</strong> Jago</li>
+                </ul>
+            </section>
+
+            <!-- Box 4 -->
+            <section class="box-section">
+                <h2>Sertifikasi & Pelatihan</h2>
+                <ul>
+                    <li>IDCamp / Dicoding</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                </ul>
+            </section>
+        </div> <!-- Penutup grid-layout -->
+
+        <!-- Bagian Project (Tetap di luar grid agar lebarnya penuh di bawah) -->
+        <section class="project-area">
+        <!-- Judul luar -->
+        <h2 class="project-title">Projects</h2>
+        
+        <!-- Wadah Grid untuk Kartu Project -->
+        <div class="project-grid">
+            
+            <!-- Kartu Project 1 -->
+            <article class="project-card">
+                <a href="detail-game-horror.html" target="_blank">
+                    <img src="project1.png" alt="Preview Game Horror" class="project-img">
+                </a>
+                <h3>Mod Game</h3>
+                <p>Membuat mod untuk game Forza Horizon 6 menggunakan Blender dan Forza Tech Studio.</p>
             </article>
-        </section>
 
-        <section>
-            <h2>Project</h2>
-            <article>
-                <h3>Game horror</h3>
-                <p><strong>Deskripsi:</strong> Mengembangkan game horror menggunakan Unity Engine.</p>
+            <!-- Kartu Project 2 -->
+            <article class="project-card">
+                <a href="detail-lorem.html" target="_blank">
+                    <img src="project2.jpeg" alt="Preview Project Kedua" class="project-img">
+                </a>
+                <h3>Horror Game</h3>
+                <p>Mencoba mengembangkan game horror simple menggunakan Unity Engine.</p>
             </article>
-            <article>
-                <h3>Lorem, ipsum dolor.</h3>
-                <p><strong>Deskripsi:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, saepe?</p>
+
+            <!-- Kartu Project 3 -->
+            <article class="project-card">
+                <a href="detail-tiga.html" target="_blank">
+                    <img src="bg.jpg" alt="Preview Project Ketiga" class="project-img">
+                </a>
+                <h3>0</h3>
+                <p>belum ada project lagi.</p>
             </article>
-        </section>
 
-        <section>
-            <h2>Keahlian</h2>
-            <ul>
-                <li><strong>Hard Skills:</strong> JavaScript, Python, HTML/CSS</li>
-                <li><strong>Soft Skills:</strong> Jago</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Sertifikasi & Pelatihan</h2>
-            <ul>
-                <li>IDCamp / Dicoding</li>
-                <li>Lorem ipsum dolor sit.</li>
-            </ul>
-        </section>
+        </div>
+    </section>
     </main>
 
     <hr>

@@ -1,0 +1,150 @@
+@import url('https://googleapis.com');
+
+
+body {
+    background-color: #1e1e1e; 
+    color: #ffffff;            
+    font-family: sans-serif;   
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 20px 0; 
+}
+
+.profile-container img {
+    border-radius: 50%;        
+    object-fit: cover;         
+}
+
+.profile-text h1 {
+    margin-top: 0;             
+    margin-bottom: 5px;
+}
+
+.profile-text p {
+    margin: 5px 0;             
+}
+
+.social-links a i {
+    margin-right: 6px;   
+    font-size: 1.1em;    
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none; 
+}
+
+a:hover {
+    color: #a0a0a0; 
+}
+
+.box-section {
+    background-color: #2a2d31; 
+    border-radius: 15px;       
+    padding: 25px;             
+    margin-bottom: 25px;       
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /
+}
+
+
+.box-section h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #555; 
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+
+.project-img {
+    width: 100%;               
+    max-width: 400px;          
+    border-radius: 8px;        
+    margin: 10px 0;            
+    cursor: pointer;           
+    transition: transform 0.3s ease; 
+}
+
+
+.project-img:hover {
+    transform: scale(1.03);    
+}
+
+
+.project-card {
+    margin-bottom: 30px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 25px;                      
+    margin-bottom: 25px;            
+}
+
+
+.grid-layout .box-section {
+    margin-bottom: 0;
+}
+
+.project-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+}
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 20px;
+}
+
+/* Desain Kotak (Kartu) Project */
+.project-card {
+    background-color: #2a2d31; 
+    border-radius: 12px;       
+    padding: 15px;             
+    border: 1px solid #3d4147; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.project-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Desain Foto di dalam Kartu */
+.project-img {
+    width: 100%;
+    height: 160px;       
+    object-fit: cover;   
+    border-radius: 8px;  
+    margin-bottom: 15px; 
+    cursor: pointer;
+}
+
+
+.project-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.2em;
+}
+
+.project-card p {
+    margin: 0;
+    color: #b0b5bd;      
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr; 
+    }
+}
